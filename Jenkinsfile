@@ -12,7 +12,7 @@ pipeline {
                     branches: [[name: '*/main']],
                     extensions: [],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/akash-makruwar96/TDI-Terraform-Automation.git'
+                        url: 'https://github.com/akash-makruwar96/Aws-Automation-2.git'
                     ]]
                 )
             }
@@ -38,3 +38,4 @@ pipeline {
         }
     }
 }
+
