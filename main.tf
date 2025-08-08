@@ -21,7 +21,7 @@ resource "aws_internet_gateway" "IGW" {
 resource "aws_subnet" "PublicSubnet1" {
   vpc_id                  = aws_vpc.CustomVPC.id
   cidr_block              = "10.0.0.0/18"
-  availability_zone       = "us-west-2a"
+  availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = true
 
   tags = {
@@ -32,7 +32,7 @@ resource "aws_subnet" "PublicSubnet1" {
 resource "aws_subnet" "PublicSubnet2" {
   vpc_id                  = aws_vpc.CustomVPC.id
   cidr_block              = "10.0.64.0/18"
-  availability_zone       = "us-west-2b"
+  availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = true
 
   tags = {
@@ -244,4 +244,5 @@ resource "aws_autoscaling_group" "autoscaling_group_webteir" {
     value               = "autoscaling-group-webteir"
     propagate_at_launch = true
   }
+
 }
