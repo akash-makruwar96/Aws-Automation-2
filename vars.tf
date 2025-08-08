@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "us-west-2"
+  default = "ap-south-1"
 }
 #-------------------------Variables For Autoscaling---------------------
 variable "autoscaling_group_min_size" {
@@ -30,4 +30,5 @@ data "aws_ami" "latest_amazon_linux" {
     name   = "root-device-type"
     values = ["ebs"]
   }
+
 }
